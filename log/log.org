@@ -1,0 +1,22 @@
+#+TITLE: Stanford CS143 Compilers course
+#+AUTHOR: Comcx
+
+* DONE [2/2] General introduction
+** DONE Concepts of interpreter
+Execute codes directly
+
+** DONE Concepts of Compilers
+Compile codes to another language...
+
+* DONE Structure of *compilers*
+- Lexical phase
+- Parsing phase
+- Senmantic analysis
+- Optimization
+- Code generation
+
+* NEXT Economy of programming languages
+
+
+
+
