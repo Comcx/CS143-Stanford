@@ -15,7 +15,20 @@ Compile codes to another language...
 - Optimization
 - Code generation
 
-* NEXT Economy of programming languages
+* DONE Economy of programming languages
+* DONE COOL overview
+Example code to println "Hello, world!"
+#+begin_src
+class Main inherits IO {
+  main(): Object {
+    out_string("Hello, world!\n");
+  };
+};
+#+end_src
+
+* NEXT Lexical analysis
+
+
 
 
 
