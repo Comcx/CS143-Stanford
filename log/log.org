@@ -27,9 +27,11 @@ class Main inherits IO {
 #+end_src
 
 * NEXT Lexical analysis
+*String => Tokens*
+where Tokens are in format < /class/, /string/ >
 
-
-
-
+- Recognizesubstrings corresponding to tokens
+  - The lexemes
+- Identity the token class of each lexeme
 
 
