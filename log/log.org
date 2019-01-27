@@ -30,8 +30,15 @@ class Main inherits IO {
 *String => Tokens*
 where Tokens are in format < /class/, /string/ >
 
-- Recognizesubstrings corresponding to tokens
-  - The lexemes
-- Identity the token class of each lexeme
+- *Goal* of lexical analysis
+  - Recognize substrings corresponding to tokens
+    - The _lexemes_
+  - Identity the /token/ class of each lexeme
+
+- Left to right scan => *lookahead* problem...
+
+
+
+
 
 
