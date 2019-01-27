@@ -37,7 +37,7 @@ where Tokens are in format < /class/, /string/ >
 
 - Left to right scan => *lookahead* problem...
 
-** NEXT [1/2] Regular languages
+** DONE [2/2] Regular languages
 *Regular expression* specifies regular languages
 
 *** DONE Syntax of Regular expression
@@ -62,13 +62,27 @@ where Tokens are in format < /class/, /string/ >
 - Except
   *[^a-z]*
 
-*** NEXT Implementing regular expressions
-**** NEXT Finite Automata
+*** DONE Implementing regular expressions
+**** DONE [2/2] Finite Automata
 - An input alphabet \Sigma
 - A finite set of states S
 - A start state n
 - A set of accepting states F \sube S
 - A set of transitions State ->_input State
+
+***** DONE Deteministic Finite Automata(DFA)
+- One transition per input per state
+- No \epsilon movement
+
+***** DONE Nondeteministic Finite Automata(NFA)
+- Can have multiple transitions for one input in a given state
+- Can have \epsilon moves
+
+**** DONE Regular expression => DFA
+**** DONE DFA => NFA
+**** DONE Table method
+
+** NEXT Programming Assignment 1(PA1)
 
 
 
