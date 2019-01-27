@@ -42,25 +42,25 @@ where Tokens are in format < /class/, /string/ >
 
 *** DONE Syntax of Regular expression
 - *Union* 
-*A + B*
+  *A + B*
 
 - *Concatenation*
-*AB*
+  *AB*
 
 - *Iteration*
-*A**
+  *A**
 
 - Optional
-*A?*
+  *A?*
 
 - At least one
-*A+*
+  *A+*
 
 - Range
-*[a-z]*
+  *[a-z]*
 
 - Except
-*[^a-z]*
+  *[^a-z]*
 
 *** NEXT Implementing regular expressions
 **** NEXT Finite Automata
@@ -68,7 +68,7 @@ where Tokens are in format < /class/, /string/ >
 - A finite set of states S
 - A start state n
 - A set of accepting states F \sube S
-- A set of transitions State -> State
+- A set of transitions State ->_input State
 
 
 
