@@ -84,7 +84,17 @@ where Tokens are in format < /class/, /string/ >
 
 ** NEXT Programming Assignment 1(PA1)
 *** TODO Learning *FLEX*
-
+- Flex file format
+  #+begin_src c
+%{
+Declarations
+%}
+Definitions
+%%
+Rules
+%%
+User subroutines
+  #+end_src
 
 
 
