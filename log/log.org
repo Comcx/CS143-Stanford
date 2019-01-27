@@ -37,6 +37,38 @@ where Tokens are in format < /class/, /string/ >
 
 - Left to right scan => *lookahead* problem...
 
+** NEXT [1/2] Regular languages
+*Regular expression* specifies regular languages
+
+*** DONE Syntax of Regular expression
+- *Union* 
+*A + B*
+
+- *Concatenation*
+*AB*
+
+- *Iteration*
+*A**
+
+- Optional
+*A?*
+
+- At least one
+*A+*
+
+- Range
+*[a-z]*
+
+- Except
+*[^a-z]*
+
+*** NEXT Implementing regular expressions
+**** NEXT Finite Automata
+- An input alphabet \Sigma
+- A finite set of states S
+- A start state n
+- A set of accepting states F \sube S
+- A set of transitions State -> State
 
 
 
