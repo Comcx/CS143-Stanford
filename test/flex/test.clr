@@ -1,0 +1,16 @@
+---- Test codes
+
+(lambda Test (id: Int)
+	(= (: a Int) id)
+	(= (: f (-> Int Int))
+              (=> x (+ x 1)))
+)
+
+
+(= (: obj Test) (Test 5))
+
+(print (.a obj))
+
+
+
+

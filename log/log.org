@@ -82,9 +82,9 @@ where Tokens are in format < /class/, /string/ >
 **** DONE DFA => NFA
 **** DONE Table method
 
-** NEXT Programming Assignment 1(PA1)
-*** TODO Learning *FLEX*
-- Flex file format
+** NEXT [1/2] Programming Assignment 1(PA1)
+*** DONE Learning *FLEX*
+- *Flex file format*
   #+begin_src c
 %{
 Declarations
@@ -95,6 +95,35 @@ Rules
 %%
 User subroutines
   #+end_src
+
+- *Patterns*
+
+  In addition to characters and ranges of characters, 
+  character classes can also contain character class expressions. 
+  These are expressions enclosed inside ‘[:’ and ‘:]’ delimiters 
+  (which themselves must appear between the ‘[’ and ‘]’ of the character class. 
+  Other elements may occur inside the character class, too). The valid expressions are:
+  #+begin_src
+[:alnum:] [:alpha:] [:blank:]
+[:cntrl:] [:digit:] [:graph:]
+[:lower:] [:print:] [:punct:]
+[:space:] [:upper:] [:xdigit:]
+  #+end_src
+
+*** NEXT Language lexer
+Instead of making a COOL lexer, I decide to design a better language COOLER
+with its lexer.(I don't like COOL's syntax, like a mix of Scala and Haskell)
+
+Finished <2019-01-28 Mon>
+
+- COOLER Syntax:
+
+  - Number: Integer, Real
+  - String: "xxx"
+  - Lambda: (lambda (param...) (expr))
+  - => Syntax
+  - : Type note
+  - Lambda selectors
 
 
 
