@@ -24,8 +24,13 @@ ID       ({DIGIT}|{ALPHA}|{SYMBOL}|{WILD})*
 
 %%
 
-\"(\\.|[^"\\])*\" printf("String: %s\n", yytext); /*"*/
-
+\"(\\.|[^"\\])*\" {
+  printf("String: %s\n", yytext); /*"*/
+}
+  
+\.[^ ]+ {
+  printf("Symbol: %s\n", yytext);
+}
   
 [\+\-]?{DIGIT}+ {
   printf( "Integer: %s (%d)\n", yytext,
@@ -37,7 +42,7 @@ ID       ({DIGIT}|{ALPHA}|{SYMBOL}|{WILD})*
           atof(yytext) );
 }
 
-if|for|while|lambda|:|=> {
+if|for|:|=> {
   printf( "Keyword: %s\n", yytext );
 }
 
