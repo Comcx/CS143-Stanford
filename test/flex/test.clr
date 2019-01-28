@@ -1,14 +1,19 @@
 ---- Test codes
 
-(lambda Test (id: Int)
-  (= ((: a Int) id)
-     ((: f (-> Int Int))
-           (=> x (+ x 1)))
-     (f a))
+(class Test (id: Int)
+  (: a Int)
+  (: f (-> Int Int))
 )
 
+(: main (-> Int (IO)))
+(= (main n)
+  (print "Hello, COOLER!\n"))
 
-(= (: obj Test) (Test 5))
+
+(= (: obj (Test 0)) (object
+  (= a 7)
+  (= (f n) (+ n 1))
+))
 
 (print obj)
 
