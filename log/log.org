@@ -26,7 +26,7 @@ class Main inherits IO {
 };
 #+end_src
 
-* NEXT Lexical analysis
+* DONE Lexical analysis
 *String => Tokens*
 where Tokens are in format < /class/, /string/ >
 
@@ -82,7 +82,7 @@ where Tokens are in format < /class/, /string/ >
 **** DONE DFA => NFA
 **** DONE Table method
 
-** NEXT [1/2] Programming Assignment 1(PA1)
+** DONE [2/2] Programming Assignment 1(PA1)
 *** DONE Learning *FLEX*
 - *Flex file format*
   #+begin_src c
@@ -110,7 +110,7 @@ User subroutines
 [:space:] [:upper:] [:xdigit:]
   #+end_src
 
-*** NEXT Language lexer
+*** DONE Language lexer
 Instead of making a COOL lexer, I decide to design a better language COOLER
 with its lexer.(I don't like COOL's syntax, like a mix of Scala and Haskell)
 
@@ -125,5 +125,14 @@ Finished <2019-01-28 Mon>
   - : Type note
   - Lambda selectors
 
+* NEXT Parsing
+** DONE Top-down parsing
+*** DONE Production normal form
+*** DONE Decent recursive algorithm
+*** DONE Left recursion
+*** NEXT [/] Programming Assignment 2(PA2)
+
+
+** NEXT Bottom-up parsing
 
 
