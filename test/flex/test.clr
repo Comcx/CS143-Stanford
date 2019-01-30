@@ -1,21 +1,23 @@
----- Test codes
+-------------- Test codes -------------
 
-(class Test (id: Int)
-  (: a Int)
-  (: f (-> Int Int))
+(class Test (: n Int)
+  (= id n)
+  (: test (-> Test Bool))
+  (: main (-> (List String) (IO)))
+  (= (main args)
+    (print (fst args)))
 )
 
-(: main (-> Int (IO)))
-(= (main n)
-  (print "Hello, COOLER!\n"))
+(class (: Testable (Test 0)) (: n Int)
+  (= (test tt) (== (.id tt) n))
+  (= (: debug String)
+    (.+ "Testing" (.toString id)))
+)
 
 
-(= (: obj (Test 0)) (object
-  (= a 7)
-  (= (f n) (+ n 1))
-))
+(= (: obj Test) (Testable 0))
 
-(print obj)
+(print (.id obj))
 
 
 

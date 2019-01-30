@@ -42,7 +42,7 @@ ID       ({DIGIT}|{ALPHA}|{SYMBOL}|{WILD})*
           atof(yytext) );
 }
 
-if|for|:|=>|=|<-|->|class|type|object {
+if|for|:|=|=:|<-|->|class {
   printf( "Keyword: %s\n", yytext );
 }
 
