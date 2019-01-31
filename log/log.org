@@ -126,12 +126,29 @@ Finished <2019-01-28 Mon>
   - Lambda selectors
 
 * NEXT Parsing
-** DONE Top-down parsing
+** NEXT Top-down parsing
 *** DONE Production normal form
 *** DONE Decent recursive algorithm
 *** DONE Left recursion
-*** NEXT [/] Programming Assignment 2(PA2)
+*** NEXT [1/2] Programming Assignment 2(PA2)
+**** DONE Learning *Bison*
+- *Bison format*
+  #+begin_src
+%{
+  Prologue
+%}
 
+Bison declarations(definitions)
+
+%%
+Grammar rules(Productions)
+%%
+
+Epilogue(User subroutines)
+  #+end_src
+
+**** NEXT Building Syntax Tree
+***** DONE BUGs solved <2019-01-31 Thu>
 
 ** NEXT Bottom-up parsing
 

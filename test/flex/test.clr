@@ -1,6 +1,6 @@
 -------------- Test codes -------------
 
-(class Test (: n Int)
+(class (: Test Set) (: n Int)
   (= id n)
   (: test (-> Test Bool))
   (: main (-> (List String) (IO)))
@@ -17,7 +17,7 @@
 
 (= (: obj Test) (Testable 0))
 
-(print (.id obj))
+(print (.test obj obj))
 
 
 
