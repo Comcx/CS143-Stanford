@@ -15,7 +15,7 @@
 )
 
 
-(= (: obj Test) (Testable 0))
+(= (: obj Test) (new (Testable 0)))
 
 (print (.test obj obj))
 

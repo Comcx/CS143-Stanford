@@ -6,9 +6,11 @@ coo_Node *get_node() {
 
   coo_Node *p;
   size_t size_node = sizeof(coo_Node);
-  if ((p = malloc(size_node)) == NULL)
-    yyerror("out of memory\n");
-
+  if ((p = malloc(size_node)) == NULL) {
+    
+    printf("out of memory\n");
+    exit(-1);
+  }
   p->next = NULL;
   return p;
 }
