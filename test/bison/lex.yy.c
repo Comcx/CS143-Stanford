@@ -818,7 +818,7 @@ case 5:
 YY_RULE_SETUP
 #line 54 "coo_lex.l"
 {
-  yylval.str = yytext;
+  yylval.str = strdup(yytext);
   return coo_KEYWORD;
 }
 	YY_BREAK
@@ -826,7 +826,7 @@ case 6:
 YY_RULE_SETUP
 #line 62 "coo_lex.l"
 {
-  yylval.str = yytext;
+  yylval.str = strdup(yytext);
   return coo_ID;
 }
 	YY_BREAK

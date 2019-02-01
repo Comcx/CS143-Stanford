@@ -52,7 +52,7 @@ ID       ({DIGIT}|{ALPHA}|{SYMBOL}|{WILD})*
 }
 
 if|for|let|:|=|=:|<-|->|class|object {
-  yylval.str = yytext;
+  yylval.str = strdup(yytext);
   return coo_KEYWORD;
 }
 
@@ -60,7 +60,7 @@ if|for|let|:|=|=:|<-|->|class|object {
 
 
 {ID} {
-  yylval.str = yytext;
+  yylval.str = strdup(yytext);
   return coo_ID;
 }
 

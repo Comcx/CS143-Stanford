@@ -149,6 +149,7 @@ Epilogue(User subroutines)
 
 **** NEXT Building Syntax Tree
 ***** DONE BUGs solved <2019-01-31 Thu>
+***** DONE COOLA basic parser finished! <2019-02-02 Sat>
 
 ** NEXT Bottom-up parsing
 
