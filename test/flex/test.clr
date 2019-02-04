@@ -1,6 +1,6 @@
 -------------- Test codes -------------
 
-(class (: Test Set) (: n Int)
+(Set: (Test (: n Int))
   (= id n)
   (: test (-> Test Bool))
   (: main (-> (List String) (IO)))
@@ -8,12 +8,18 @@
     (print (fst args)))
 )
 
-(class (: Testable (Test 0)) (: n Int)
+(Set: (: (Testable (: n Int)) (Test n))
   (= (test tt) (== (.id tt) n))
   (= (: debug String)
-    (.+ "Testing" (.toString id)))
+    ("Testing" .+ (id .toString)))
 )
 
+(Set: (Lambda2 (: A Set) (: B Set) (: R Set))
+       [(: a A) (: b B)])
+
+(= (: add (-> Int Int Int)) (new [a b]
+  (+ a b)
+))
 
 (= (: obj Test) (new (Testable 0)))
 

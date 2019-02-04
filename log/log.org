@@ -125,12 +125,13 @@ Finished <2019-01-28 Mon>
   - : Type note
   - Lambda selectors
 
-* NEXT Parsing
-** NEXT Top-down parsing
+* NEXT [1/2] Parsing
+** DONE Top-down parsing
 *** DONE Production normal form
 *** DONE Decent recursive algorithm
 *** DONE Left recursion
-*** NEXT [1/2] Programming Assignment 2(PA2)
+*** DONE Predictive parsing
+*** DONE [2/2] Programming Assignment 2(PA2)
 **** DONE Learning *Bison*
 - *Bison format*
   #+begin_src
@@ -147,10 +148,12 @@ Grammar rules(Productions)
 Epilogue(User subroutines)
   #+end_src
 
-**** NEXT Building Syntax Tree
+**** DONE Building Syntax Tree
 ***** DONE BUGs solved <2019-01-31 Thu>
 ***** DONE COOLA basic parser finished! <2019-02-02 Sat>
 
 ** NEXT Bottom-up parsing
+* NEXT Semantic analysis & Type checking
+** DONE Symbol table
 
 

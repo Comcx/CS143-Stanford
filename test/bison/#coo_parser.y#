@@ -42,7 +42,8 @@ List : coo_LEFT
        coo_RIGHT  {}
      | coo_LEFT
        Exps
-       coo_RIGHT  {$$ = list($2);}
+       coo_RIGHT  {
+       //printf($$ = list($2);}
      ;
 
 Exps : Expr       {$$ = $1; /*printf("ans = "); print_node($$);*/}
